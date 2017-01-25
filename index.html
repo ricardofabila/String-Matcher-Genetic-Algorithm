@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>String matcher Genetic Algorithm</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://bootswatch.com/yeti/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-sm-8" id="stats">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1>Best phrase so far:</h1>
+                        <h2 id="bestPhrase">&nbsp;</h2>
+                        <hr>
+                    </div>
+                    <div class="col-sm-offset-1 col-sm-10">
+                        <table width="100%">
+                            <tbody>
+                                <tr>
+                                    <th>Total generations</th>
+                                    <td id="total">0</td>
+                                </tr>
+                                <tr>
+                                    <th>Average fitness</th>
+                                    <td id="average">0%</td>
+                                </tr>
+                                <tr>
+                                    <th>Mutation rate</th>
+                                    <td id="mutation">0%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <br><br>
+                        <input id="phrase" style="width: 80%; height: 10%;" class="text-center" type="text" placeholder="Insert your desired string here">
+                        <br><br>
+                        <input id="rate" style="width: 80%; height: 10%;" class="text-center" type="text" placeholder="Insert the mutation rate ( 0 to 1)">
+                        <br><br>
+                        <input id="max" style="width: 80%; height: 10%;" class="text-center" type="text" placeholder="Insert the maximum population size">
+                        <br><br>
+                        <button id="go" style="width: 80%; height: 5%;" type="button" class="btn btn-info" name="button">Run!</button>
+                        <br><br>
+                        <button id="clear" style="width: 80%; height: 5%;" type="button" class="btn btn-danger" name="button">Clear!</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <br><br><br>
+                <h1>All strings:</h1>
+                <hr>
+                <div id="allPhrases">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script language="javascript" type="text/javascript" src="js/Population.js"></script>
+    <script language="javascript" type="text/javascript" src="js/DNA.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+    <script language="javascript" type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
